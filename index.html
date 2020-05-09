@@ -1,89 +1,277 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Ian Iskra Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
+<html lang="en">
+	<head>
+		<title>Ian Iskra Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="css/styles.css" />
+		<!-- <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> -->
 
-</head>
-<body>
+	</head>
 
-	<header>
-	
-		<div class="container">
-				
-			<nav>
+	<!-- Have a Preload -->
+	<body class="preload">
+
+		<!-- Wrapper -->
+		<div id="container">
+
+			<!-- Header -->
+			<header id="header" class="alt">
+				<!-- Include the Logo as Image -->
+				<span class="logo"><img src="#"/></span>
+				<h1>Ian Iskra</h1>
+				<p>Web Portfolio, Fully Responsive <br /></p>
+			</header>
+
+			<!-- Navigation -->
+			<!-- Navigation Has Fixed Positioning on Desktop View -->
+			<nav id="nav">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About Ian</a>
-						<ul>
-							<li><a href="#">Ian Iskra</a></li>
-							<li><a href="#">Resume</a></li>
-						</ul>
-					</li>
+					<!-- The # will allow a jump down to Content -->
+
+					<!-- Brief About -->
+					<li><a href="#intro">About</a></li>
+
+					<!-- Projects on Web Applications -->
+					<li><a href="#first">First Section</a></li>
+
+					<!-- Projects that include OOP: Java, C, also Concurrency -->
+					<li><a href="#second">Second Section</a></li>
+
+					<!-- Contact Me -->
+					<li><a href="#contact">Get Started</a></li>
 				</ul>
 			</nav>
-	
-		</div><!-- end container -->
-		
-		<div class="clear"></div><!-- clear floating elements -->
-	
-	</header><!-- end header -->
 
-	<section>
-		
-		<!-- Create Sections or Portfolio Projects With Box Shadowing  -->
+			<!-- Main Content -->
+			<div id="main">
+				<!-- Notes to Add:
+					1) Add Fade In Effects for Selected Content https://www.youtube.com/watch?v=oa4aMw_RjI4 -->
 
-			<!-- <div id="sections">
-				<h3 class="heading-section">My Sections With Box Shadowing</h3>
-				<div id="section1">
-					<h3>Vegetables</h3>
-					<p>Maecenas turpis est, mollis id quam in, auctor varius justo. Nulla a vestibulum urna.</p>
-					<p>&nbsp;</p>
-					<p><a href="#" class="more">Read More</a></p>
-				</div>  -->
-				<!-- end section1 -->
+				<!-- Introduction Section -->
+				<section id="intro" class="main">
+
+					<div class="spotlight">
+
+						<!-- Content for the Intro -->
+						<div class="content">
+							<!-- Header is related to element that contains it -->
+							<header class="major">
+								<h2>My Introduction Section</h2>
+							</header>
+							<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
+								adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
+								Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+							
+							<!-- Contains Button To Learn More -->
+							<ul class="actions">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</div>
+
+						<!-- Contains Image To Right of Section -->
+						<span class="image"><img src="#" alt="mockup" /></span>
+
+					</div>
+				</section>
+
+
+
+
+				<!-- FIRST SECTION: WEB BASED PROJECTS: HTMLS, CSS, JS, NODE, REACT, ANGULAR, APIS -->
+				<!-- Classes Used in Orignal Template: "special" -->
+				<section id="first" class="main">
+
+					<!-- IMPLEMENT: Fade In Effects of Contents https://www.youtube.com/watch?v=oa4aMw_RjI4 -->
+					<!-- Header is related to element that contains it -->
+					<header class="major">
+						<h2>Web Projects</h2>
+					</header>
+
+					<!-- Features My Showcase Web Project -->
+					<ul class="features">
+						
+						<!-- Project 1 -->
+						<li>
+							<!-- Also Used: "major style3 fa-copy" as classes in Original Template in the Span Tags -->
+							<!-- Span holds clickable icon to project, Likely href -->
+							<span class="icon"></span>
+
+							<!-- Heading and Paragragh description displayed below clickable icon -->
+							<h3>Web Project 1</h3>
+							<p>This is a description for Web Project 1</p>
+						</li>
+
+						<!-- Project 2 -->
+						<li>
+							<!-- Also Used: "major style3 fa-copy" as classes in Original Template in the Span Tags -->
+							<!-- Span holds clickable icon to project, Likely href -->
+							<span class="icon"></span>
+						
+							<!-- Heading and Paragragh description displayed below clickable icon -->
+							<h3>Web Project 2</h3>
+							<p>This is a description for Web Project 2</p>
+						</li>
+
+						<!-- Project 3 -->
+						<li>
+							<!-- Also Used: "major style3 fa-copy" as classes in Original Template in the Span Tags -->
+							<!-- Span holds clickable icon to project, Likely href -->
+							<span class="icon"></span>
+						
+							<!-- Heading and Paragragh description displayed below clickable icon -->
+							<h3>Web Project 3</h3>
+							<p>This is a description for Web Project 3</p>
+						</li>
+
+						<!-- Can Add More Project(s) -->
+					</ul>
+
+					<!-- Learn More Could Be Replaced With See More -->
+					<!-- Contains the Learn More Button -->
+					<footer class="major">
+						<!-- Also Used: "special" in Original Template in the Span Tags -->
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</footer>
+				</section>
+
+
+
+
+				<!-- SECOND SECTION: JAVA BASED PROJECTS, Also C Language Possibly Want This To Show Off Algorithms & Data Structures -->
+				<!-- Classes Used in Orignal Template: "special" -->
+				<section id="second" class="main">
+
+					<!-- IMPLEMENT: Fade In Effects of Contents https://www.youtube.com/watch?v=oa4aMw_RjI4 -->
+					<!-- Header is related to element that contains it -->
+					<header class="major">
+						<h2>Java Projects</h2>
+						<p>These are my Java Projects using Spring, JSF, Vaadin and More to Come.</p>
+					</header>
+
+					<!-- Equivalent of "statistics" class used in original template -->
+					<ul class="oop-projects">
+
+						<!-- Should Be Displayed Like the "statistics" box from original template, would like to
+						have beautifully random Fade In Effects -->
+
+						<!-- Uses classe:"oop-projects" li "first-child" to target the left-most project -->
+						<li class="java1">
+							<!-- Span used classes:"icon solid fa-code-branch" in Orignal template -->
+							<span class="#"></span>
+							<strong>5,120</strong> Etiam
+						</li>
+						<li class="java2">
+							<!-- Span used classes:"icon solid fa-code-branch" in Orignal template -->
+							<span class="#"></span>
+							<strong>5,120</strong> Etiam
+						</li>
+						<li class="java3">
+							<!-- Span used classes:"icon solid fa-code-branch" in Orignal template -->
+							<span class="#"></span>
+							<strong>5,120</strong> Etiam
+						</li>
+						<li class="java4">
+							<!-- Span used classes:"icon solid fa-code-branch" in Orignal template -->
+							<span class="#"></span>
+							<strong>5,120</strong> Etiam
+						</li>
+
+						<!-- Uses classe:"oop-projects" li "last-child" to target the right-most project -->
+						<li class="java5">
+							<!-- Span used classes:"icon solid fa-code-branch" in Orignal template -->
+							<span class="#"></span>
+							<strong>5,120</strong> Etiam
+						</li>
+					</ul>
+
+					<p>The Descriptive Content Goes Here</p>
+
+					<!-- Learn More Could Be Replaced With See More -->
+					<!-- Create Learn More Button -->
+					<footer>
+						<!-- Also Used: "special" in Original Template in the Span Tags -->
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</footer>
+				
+				</section>
+
+				<!-- Contact Section -->
+				<!-- Classes Used in Orignal Template: "special" -->
+				<section id="contact" class="main">
+					<!-- Header -->
+					<header class="major">
+						<h2>Congue imperdiet</h2>
+						<p>There a Line Underneath h2, and this is a Beautiful Description <br /></p>
+					</header>
+
+					<footer class="major">
+						<!-- Also Used: "special" in Original Template in the ul Tags -->
+						<ul class="actions">
+
+							<!-- Call To Action & 2nd Action Button -->
+							<li><a href="#" class="button primary">Call To Action</a></li>
+							<li><a href="#" class="button">2nd Call To Action</a></li>
+						</ul>
+					</footer>
+				</section>
+
+			</div><!-- End Main Content -->
+
+
+			<!-- Footer Material -->
+			<footer id="footer">
+
+				<section>
+					<h2>Aliquam sed mauris</h2>
+					<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget
+					dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio</p>
+
+					<ul class="actions">
+						<li><a href="#" class="button">Learn More</a></li>
+					</ul>
+
+				</section>
+
+				<section>
+					<h2>Etiam feugiat</h2>
+
+					<!-- Description List -->
+					<dl class="alt">
+						<!-- Descriptive Terms & Description -->
+						<dt>Coffee</dt>
+						<dd>Black Wth Soy Juice</dd>
+						<dt>Donut</dt>
+						<dd>With Bavarian Cream</dd>
+						<dt>Smoothie</dt>
+						<dd>Mixed Berries, Greek Yogurt, Bannana</dd>
+					</dl>
+
+					<!-- Links to Professional Social Media -->
+					<ul>
+						<!-- Classes Used In Orignal Template: icon brands fa-github alt -->
+						<!-- Get One For Linkedin --- Classes Used In Orignal Template: icon brands fa-github alt -->
+						<li><a href="#"><span>Linkedin</span></a></li>
+						<li><a href="#"><span>GitHub</span></a></li>
+					</ul>
+				</section>
+
+				<p class="copyright">&copy; Ian Iskra</p>
+
+				
 			
-				<!-- <div id="section2">
-					<h3>Doughnuts</h3>
-					<p>Duis justo orci, sagittis vel est at, bibendum scelerisque leo. Aenean vitae vehicula</p>
-					<p>&nbsp;<p>
-							<p><a href="#" class="more">Read More</a></p>
-				</div>  -->
-				<!-- end section2 -->
-			
-				<!-- <div id="section3">
-					<h3>LAHWF</h3>
-					<p>Instead, it sounds like Rector's suit is including what online commenters said</p>
-					<p>&nbsp;</p>
-					<p><a href="#" class="more">Read More</a></p>
-				</div>  -->
-				<!-- end section3 -->
-			
-				<!-- <div id="section4">
-					<h3>Lorem Ipsum</h3>
-					<p>Standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.</p>
-					<p>&nbsp;</p>
-					<p><a href="#" class="more">Read More</a></p>
-				</div>  -->
-				<!-- end section4 -->
-			
-			
-			<!-- </div> -->
-			<!-- end sections -->
-
-			
-	</section>
-
-	<footer>
-
-	</footer>
+			</footer>
 
 
+		</div><!-- End Wrapper -->
 
-</body>
+		<!-- Scripts After Wrapper -->
+
+	</body>
 </html>
-
-<!-- Templates: 
-https://colorlib.com/wp/template/nitro/
-https://skillcrush.com/blog/free-portfolio-templates/ -->

@@ -1,0 +1,104 @@
+/*------- Tags -------*/
+html{
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #935d8c;
+	background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+	background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+	background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+	background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+}
+
+/*-------- IDs --------*/
+#header{
+
+}
+
+#intro{
+
+}
+
+#footer{
+
+}
+
+
+/*------- Classes -------*/
+.preload{
+	
+}
+
+.alt{
+
+}
+
+.main{
+
+}
+
+/* Repeatedly Uses Spotlight */
+.spotlight{
+
+}
+
+.content{
+
+}
+
+.major{
+
+}
+
+/* Repeatedly Uses Actions */
+.actions{
+
+}
+
+.button{
+
+}
+
+/* Image Class */
+.image{
+
+}
+
+.features{
+
+}
+
+/* Repeatedly Uses OOP Projects */
+.oop-projects{
+
+}
+
+/* The Java Projects */
+.java1{
+
+}
+
+.java2{
+
+}
+
+.java3{
+
+}
+
+.java4{
+
+}
+
+.java5{
+
+}
+
+.primary{
+
+}
+
+.copyright{
+	
+}
