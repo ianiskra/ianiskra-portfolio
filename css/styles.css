@@ -47,6 +47,32 @@ body {
 	line-height: 1.65;
 }
 
+body.preload *, body.preload *:before, body.preload *:after {
+	-moz-animation: none !important;
+	-webkit-animation: none !important;
+	-ms-animation: none !important;
+	animation: none !important;
+	-moz-transition: none !important;
+	-webkit-transition: none !important;
+	-ms-transition: none !important;
+	transition: none !important;
+}
+
+/* Why Does this need to Disappear?
+It's Supposed to APPEAR in at page load! */
+body.preload #header.alt > * {
+	/* opacity: 0; */
+}
+
+body.preload #header.alt .logo{
+	transform: scale(0.8) rotate(-30deg);
+	-moz-transform: scale(0.8) rotate(-30deg);
+	-webkit-transform: scale(0.8) rotate(-30deg);
+	-ms-transform: scale(0.8) rotate(-30deg);
+}
+
+
+
 /* Star means Selects All Elements */
 *, *:before, *:after {
 		box-sizing: inherit;
@@ -54,6 +80,170 @@ body {
 
 ol, ul{
 	list-style: none;
+}
+
+ol li {
+	padding-left: 0.25em;
+}
+
+ul{
+	list-style: disc;
+	margin: 0 0 2em 0;
+	padding-left: 1em;
+}
+
+ul li{
+	padding-left: 0.5em;
+}
+
+ul.alt {
+	list-style: none;
+	padding-left: 0;
+}
+
+ul.alt li {
+	border-top: solid 1px;
+	padding: 0.5em 0;
+}
+
+ul.alt li:first-child {
+	border-top: 0;
+	padding-top: 0;
+}
+
+ul.alt li {
+	border-top-color: rgba(255, 255, 255, 0.35);
+}
+
+ul.actions{
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	cursor: default;
+	list-style: none;
+	margin-left: -1em;
+	padding-left: 0;
+}
+
+ul.actions li {
+	padding: 0 0 0 1em;
+	vertical-align: middle;
+}
+
+ul.actions.special{
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	width: 100%;
+	margin-left: 0;
+}
+
+ul.actions.special li:first-child {
+	padding-left: 0;
+}
+
+/* Target Social Media Icons */
+ul.icons{
+	cursor: default;
+	list-style: none;
+	padding-left: 0;
+}
+
+ul.icons li {
+	display: inline-block;
+	padding: 0 0.65em 0 0;
+}
+
+ul.icons li:last-child {
+	padding-right: 0 !important;
+}
+
+/* Section/Article */
+section.special, article.special {
+	text-align: center;
+}
+
+header.major{
+	margin-bottom: 3em;
+}
+
+header.major h2 {
+	font-size: 2em;
+}
+
+header.major h2:after{
+	display: block;
+	content: '';
+	width: 3.25em;
+	height: 2px;
+	margin: 0.7em 0 1em 0;
+	border-radius: 2px;
+}
+
+section.special header.major h2:after, article.special header.major h2:after{
+	margin: 0 auto;
+}
+
+header.major p {
+	font-size: 1.25em;
+	letter-spacing: -0.025em;
+}
+
+header.major.special {
+	text-align: center;
+}
+
+header.major.special h2:after {
+	margin: 0 auto;
+}
+
+/* Line Under the h2 */
+header.major h2:after {
+	background-color: rgba(255, 255, 255, 0.35);
+}
+
+
+
+footer.major {
+	margin-top: 3em;
+}
+
+
+
+dl{
+	margin: 0 0 2em 0;
+}
+
+dl dt {
+	display: block;
+	font-weight: 400;
+	margin: 0 0 1em 0;
+	color: #FFF;
+}
+
+dl dd {
+	margin-left: 2em;
+}
+
+dl.alt dt {
+	display: block;
+	width: 3em;
+	margin: 0;
+	clear: left;
+	float: left;
+}
+
+/* Pushes the definition away from term */
+dl.alt dd {
+	margin: 0 0 0.85em 5.5em;
+}
+
+dl.alt:after {
+	content: '';
+	display: block;
+	clear: both;
 }
 
 a{
@@ -128,8 +318,63 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 #header{
+	padding: 5em 5em 1em 5em;
+	text-align: center;
+}
+
+#header h1{
+	margin: 0 0 0.25em 0;
+}
+
+#header p{
+	font-size: 1.25em;
+	letter-spacing: -0.025em;
+}
+
+#header.alt {
+	padding: 7em 5em 4em 5em ;
+}
+
+#header.alt h1 {
+	font-size: 3.25em;
+}
+
+/* header as parent, select all children */
+#header.alt > * {
+	transition: opacity 3s ease;
+	-moz-transition: opacity 3s ease;
+	-webkit-transition: opacity 3s ease;
+	-ms-transition: opacity 3s ease;
+	transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	-webkit-transition-delay: 0.5s;
+	-ms-transition-delay: 0.5s;
+	opacity: 1;
+}
+
+#header.alt .logo{
+	transition: opacity 1.25s ease, transform 0.5s ease;
+	-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
+	-webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
+	-ms-transition: opacity 1.25s ease, -ms-transform 0.5s ease;
+	transition-delay: 0s;
+	-moz-transition-delay: 0s;
+	-webkit-transition-delay: 0s;
+	-ms-transition-delay: 0s;
+	display: block;
+	margin: 0 0 1.5em 0;
+}
+
+#header.alt .logo img{
+	display: block;
+	margin: 0 auto;
+	max-width: 75%;
+}
+
+#nav{
 
 }
+
 
 #intro{
 
@@ -155,62 +400,347 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 /* Repeatedly Uses Spotlight */
 .spotlight{
-
+	display: flex;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	align-items: center;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	margin: 0 0 2em 0;
 }
 
-.content{
-
+.spotlight .intro-content{
+	flex:1;
+	-moz-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
 }
 
-.major{
-
+.spotlight .intro-content > :last-child {
+	margin-bottom: 0;
 }
 
-/* Repeatedly Uses Actions */
-.actions{
+.spotlight .intro-content header.major {
+	margin: 0 0 2em 0;
+}
 
+.spotlight .image{
+	display: inline-block;
+	margin: 0 0 0 4em;
+	padding: 0.65em;
+	border-radius: 100%;
+	border: solid 1px;
+	border-color: rgba(255, 255, 255, 0.35);
+}
+
+/* Target the Image */
+.spotlight .image img{
+	display: block;
+	border-radius: 100%;
+	width: 16em;
 }
 
 .button{
-
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	border-radius: 8px;
+	border: 0;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 300;
+	height: 2.75em;
+	line-height: 2.75em;
+	min-width: 9.25em;
+	padding: 0 1.5em;
+	text-align: center;
+	text-emphasis: none;
+	white-space: nowrap;
 }
 
-/* Image Class */
-.image{
-
-}
-
+/* Features */
 .features{
-
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	width: calc(100% + 2em);
+	margin: 0 0 3em -2em;.
+	padding: 0;
+	list-style: none;
 }
 
-/* Repeatedly Uses OOP Projects */
-.oop-projects{
+.features li{
+	width: calc(33.33333% - 2em);
+	margin: 3em 0 0 2em;
+	padding: 0;
+}
 
+/* nth-child matches every element that is the nth child, regardless of type, of its parent */
+.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3){
+	margin-top: 0;
+}
+
+.features li > :last-child {
+	margin-bottom: 0;
+}
+
+
+.icon{
+	text-decoration: none;
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	border-bottom: none;
+	position: relative;
+}
+
+/* :before inserts something before the content of each selected element */
+.icon:before{
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	/* Inquire more about !important */
+	text-transform: none !important;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 400;
+	line-height: solid;
+}
+
+/* icon is the parent element, select parent of label */
+.icon > .label{
+	/* display: none; */
+}
+
+.icon.solid:before{
+	font-weight: 900;
+}
+
+/* Social Media Brands */
+.icon.brands:before{
+	font-family: 'Font Awesome 5 Brands';
+}
+
+.icon.major{
+	border: solid 1px;
+	display: inline-block;
+	border-radius: 100%;
+	padding: 0.65em;
+	margin: 0 0 2em 0;
+	cursor: default;
+}
+
+.icon.major:before{
+	display: inline-block;
+	font-size: 6.25rem;
+	width: 2.25em;
+	height: 2.25em;
+	line-height: 2.2em;
+	border-radius: 100%;
+	border: solid 1px;
+	text-align: center;
+}
+
+.icon.alt{
+	display: inline-block;
+	border: solid 1px;
+	border-radius: 100%;
+}
+
+.icon.alt:before{
+	display: block;
+	font-size: 1.25em;
+	width: 2em;
+	height: 2em;
+	text-align: center;
+	line-height: 2em;
+}
+
+.icon.java1{
+	color: #efa8b0;
+}
+
+.icon.java2{
+	color: #c79cc8;
+}
+
+.icon.java3{
+	color: #a89cc8;
+}
+
+.icon.java4{
+	color: #9bb2e1;
+}
+
+.icon.java5{
+	color: #8cc9f0;
+}
+
+.icon.major{
+	border-color: rgba(255, 255, 255, 0.35);
+}
+
+.icon.major:before {
+	border-color: rgba(255, 255, 255, 0.35);
+}
+
+.icon.alt{
+	border-color: rgba(255, 255, 255, 0.35);
+	color: #FFF;
+}
+
+.icon.alt:hover {
+	background-color: rgba(255, 255, 255, 0.075);
+}
+
+.icon.alt:active {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Image */
+.image{
+	border-radius: 8px;
+	border: 0;
+	display: inline-block;
+	position: relative;
+}
+
+/* Target the img tag parent class of image*/
+.image img{
+	border-radius: 8px;
+	display: block;
+}
+
+.image.left, .image.right {
+	max-width: 40%;
+}
+
+.image.left img, .image.right img {
+	width: 100%;
+}
+
+.image.left{
+	float: left;
+	margin: 0 1.5em 1em 0;
+	top: 0.25em;
+}
+
+.image.right{
+	float: right;
+	margin: 0 1.5em 1em 0;
+	top: 0.25em;
+}
+
+.image.fit {
+	display: block;
+	margin: 0 0 2em 0;
+	width: 100%;
+}
+
+.image.fit img {
+	width: 100%;
+}
+
+.image.main{
+	display: block;
+	margin: 0 0 3em 0;
+	width: 100%;
+}
+
+.image.main img {
+	width: 100%;
+}
+
+/* Equivalent to .statistics from orignal template,
+ Repeatedly Uses OOP Projects */
+.oop-projects{
+	display: flex;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	width: 100%;
+	margin: 0 0 3em 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+}
+
+.oop-projects li{
+	-moz-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 1.5em;
+	color: #FFF;
+	text-align: center;
 }
 
 /* The Java Projects */
-.java1{
-
+.oop-projects li.java1{
+	background-color: #efa8b0;
 }
 
-.java2{
-
+.oop-projects li.java2{
+	background-color: #c79cc8;
 }
 
-.java3{
-
+.oop-projects li.java3{
+	background-color: #a89cc8;
 }
 
-.java4{
-
+.oop-projects li.java4{
+	background-color: #9bb2e1;
 }
 
-.java5{
+.oop-projects li.java5{
+	background-color: #8cc9f0;
+}
 
+.oop-projects li:first-child{
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.oop-projects li:last-child{
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+/* Find Icons and Insert Styling Here */
+.oop-projects li .icon{
+	display: inline-block;
+}
+
+.oop-projects li .icon:before{
+	font-size: 2.75rem;
+	line-height: 1.3;
 }
 
 .primary{
+
+}
+
+.label{
 
 }
 
