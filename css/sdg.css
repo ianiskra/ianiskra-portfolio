@@ -1,0 +1,140 @@
+/*----- IDs -----*/
+#container{
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+
+#desk-version{
+    /* Default Value, acts as placeholder*/
+    display: block;
+}
+
+#mobile-version{
+    display: none;
+}
+
+/*----- Tags -----*/
+header{
+    background-color: aqua;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+}
+
+/*----- Classes -----*/
+.toggle-button{
+    width: 18%;
+    padding: 10px 0px;
+}
+
+.toggle-button:hover{
+    background-color: #000;
+    color: #FFF;
+    width: 18%;
+}
+
+/* Keeps Black Color When Button Selected*/
+.black{
+    background-color: #000;
+    color: #FFF;
+}
+
+.desk-panel{
+    margin-top: 20px;
+}
+
+.material{
+    display: inline-block;
+    width: 15%;
+}
+
+.underline{
+    width: 100px;
+}
+
+.panel{
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion{
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.4s;
+    outline: none;
+}
+
+/*--- Setup Media Queries for Responsive View less than 767px ---*/
+@media screen and (max-width: 766px){
+
+    #container{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    #desk-version{
+        /* Default Value, acts as placeholder */
+        display: none;
+    }
+
+    #mobile-version{
+        display: block;
+    }
+
+    .accordion{
+        background-color: #FFF;
+        color: #444;
+        cursor: pointer;
+        width: 100%;
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: 0.4s;
+    }
+
+    .acc-plus-minus{
+        float: right;
+    }
+
+    .acc-title{
+        float: left;
+    }
+
+    .material{
+        display: inline-block;
+        width: 30%;
+    }
+
+}
