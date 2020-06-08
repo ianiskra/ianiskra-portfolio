@@ -46,12 +46,12 @@ body.preload #header.alt > * {
 } */
 
 /*CLEAN UP: This Might not Actually Do ANYTHING! */
-body.preload #header.alt .logo{
+/* body.preload #header.alt .logo{
 	transform: scale(0.8) rotate(-30deg);
 	-moz-transform: scale(0.8) rotate(-30deg);
 	-webkit-transform: scale(0.8) rotate(-30deg);
 	-ms-transform: scale(0.8) rotate(-30deg);
-}
+} */
 
 /*CLEAN UP: This Might not Actually Do ANYTHING! */
 /* Star means Selects All Elements */
