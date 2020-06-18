@@ -221,16 +221,17 @@ dl.alt:after {
 	clear: both;
 }
 
+/* Concerns Anchor Tags */
 a{
 	-moz-transition: color 0.2s ease, border-bottom 0.2s ease;
 	-webkit-transition: color 0.2s ease, border-bottom 0.2s ease;
 	-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 	transition: color 0.2s ease, border-bottom 0.2s ease;
 	text-decoration: none;
-	border-bottom: dotted 1px;
 	color: inherit;
 }
 
+/* May Not Do Anything */
 a:hover{
 	border-bottom-color: transparent;
 	color: #FFF;
@@ -474,10 +475,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	border-radius: 0.25em;
 }
 
-#main a:hover {
-	color: #636363;
-}
-
 #main strong{
 	color: #636363;
 }
@@ -502,6 +499,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			#main input[type="reset"]:hover,
 			#main input[type="button"]:hover,
 			#main button:hover, */
+
+/* White Colored Buttons */
 #main .button:hover{
 	background-color: rgba(222, 222, 222, 0.25);
 }
@@ -530,7 +529,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 #main input[type="button"].primary,
 #main button.primary, */
 
-/* Targets the 1st Call To Action Button */
+/* Targets Resume Button */
 #main .button.primary{
 	background-color: #8cc9f0;
 	color: #FFF !important;
@@ -542,6 +541,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 #main input[type="reset"].primary:hover,
 #main input[type="button"].primary:hover,
 #main button.primary:hover, */
+
+/* Resume and Contact Form Button */
 #main .button.primary:hover{
 	background-color: #9acff2;
 }
@@ -640,6 +641,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	border-bottom-left-radius: 0;
 }
 
+
 #footer{
 	display: flex;
 	display: -moz-flex;
@@ -670,16 +672,21 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 /*---------- Classes ----------*/
 
 /* I used sticky class to have #nav be fixed */
-.sticky {
+
+/* Sticky may not actually be doing anything */
+
+/* .sticky {
   position: fixed;
   top: 0;
   width: 100%;
-}
+} */
 
-.sticky + .main {
+/* .sticky + .main {
   padding-top: 60px;
-}
+} */
 
+
+/* Apply Fade-In Here. Wrapper before box */
 .spotlight{
 	display: flex;
 	display: -moz-flex;
@@ -690,8 +697,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	-webkit-align-items: center;
 	-ms-align-items: center;
 	margin: 0 0 2em 0;
+	justify-content: center;
 }
 
+
+/* This is alterting the content */
 .spotlight .intro-content{
 	flex:1;
 	-moz-flex: 1;
@@ -944,6 +954,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	width: 100%;
 }
 
+/* Wiegley's Image */
 .image.main{
 	display: block;
 	margin: 0 0 3em 0;
