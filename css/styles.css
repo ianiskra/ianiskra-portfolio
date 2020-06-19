@@ -1,4 +1,4 @@
-/*------- Tags -------*/
+/*------------- Tags -------------*/
 html{
 	box-sizing: border-box;
 	margin: 0;
@@ -26,69 +26,13 @@ body {
 	line-height: 1.65;
 }
 
-/*CLEAN UP: This Might not Actually Do ANYTHING! */
-body.preload *, body.preload *:before, body.preload *:after {
-	-moz-animation: none !important;
-	-webkit-animation: none !important;
-	-ms-animation: none !important;
-	animation: none !important;
-	-moz-transition: none !important;
-	-webkit-transition: none !important;
-	-ms-transition: none !important;
-	transition: none !important;
-}
-
-/* Why Does this need to Disappear?
-It's Supposed to APPEAR in at page load! */
-/* 
-body.preload #header.alt > * {
-	 opacity: 0; 
-} */
-
-/*CLEAN UP: This Might not Actually Do ANYTHING! */
-/* body.preload #header.alt .logo{
-	transform: scale(0.8) rotate(-30deg);
-	-moz-transform: scale(0.8) rotate(-30deg);
-	-webkit-transform: scale(0.8) rotate(-30deg);
-	-ms-transform: scale(0.8) rotate(-30deg);
-} */
-
-/*CLEAN UP: This Might not Actually Do ANYTHING! */
 /* Star means Selects All Elements */
+/* Keeps Top Nav aligned with main content */
 *, *:before, *:after {
 	box-sizing: inherit;
 }
 
-/*CLEAN UP: This Might not Actually Do ANYTHING! */
-ul{
-	margin: 0 0 2em 0;
-	padding-left: 1em;
-	list-style: none;
-}
-
-ul li{
-	padding-left: 0.5em;
-}
-
-ul.alt {
-	list-style: none;
-	padding-left: 0;
-}
-
-ul.alt li {
-	border-top: solid 1px;
-	padding: 0.5em 0;
-}
-
-ul.alt li:first-child {
-	border-top: 0;
-	padding-top: 0;
-}
-
-ul.alt li {
-	border-top-color: rgba(255, 255, 255, 0.35);
-}
-
+/* Keeps Call To Actions Buttons Aligned */
 ul.actions{
 	display: -moz-flex;
 	display: -webkit-flex;
@@ -100,11 +44,13 @@ ul.actions{
 	padding-left: 0;
 }
 
+/* Keeps Call To Actions Buttons Spaced */
 ul.actions li {
 	padding: 0 0 0 1em;
 	vertical-align: middle;
 }
 
+/* Centers Call To Actions Buttons */
 ul.actions.special{
 	-moz-justify-content: center;
 	-webkit-justify-content: center;
@@ -114,39 +60,38 @@ ul.actions.special{
 	margin-left: 0;
 }
 
-ul.actions.special li:first-child {
-	padding-left: 0;
-}
-
-/* Target Social Media Icons */
+/* Target Social Media Icons at Bottom */
+/* Keeps Icons Left */
 ul.icons{
 	cursor: default;
 	list-style: none;
 	padding-left: 0;
 }
 
+/* Keeps Icons from lining up on top of each other */
 ul.icons li {
 	display: inline-block;
 	padding: 0 0.65em 0 0;
 }
 
-ul.icons li:last-child {
-	padding-right: 0 !important;
-}
+/*------- Section & Article -------*/
 
-/* Section/Article */
+/* Keeps Text Centered throughout content */
 section.special, article.special {
 	text-align: center;
 }
 
+/* Subtle margin below header */
 header.major{
 	margin-bottom: 3em;
 }
 
+/* Font Size of Header 2 */
 header.major h2 {
 	font-size: 2em;
 }
 
+/* Contains Special Underline below Header 2 */
 header.major h2:after{
 	display: block;
 	content: '';
@@ -156,41 +101,31 @@ header.major h2:after{
 	border-radius: 2px;
 }
 
-/*CLEAN UP: This Might not Actually Do ANYTHING! */
+/* Controls Special Underline below Header 2 */
 section.special header.major h2:after, article.special header.major h2:after{
 	margin: 0 auto;
 }
 
+/* Controls font of text in lower main */
 header.major p {
 	font-size: 1.25em;
 	letter-spacing: -0.025em;
 }
 
-header.major.special {
-	text-align: center;
-}
+/*---- The Footer -----*/
 
-header.major.special h2:after {
-	margin: 0 auto;
-}
-
-/* Line Under the h2 */
-header.major h2:after {
-	background-color: rgba(255, 255, 255, 0.35);
-}
-
-
-
+/* Subtle spacing above footer */
 footer.major {
 	margin-top: 3em;
 }
 
-
-
+/* Descriptive List, Definition and Terms */
+/* Subtle margins of descri list */
 dl{
 	margin: 0 0 2em 0;
 }
 
+/* Holds Color and display */
 dl dt {
 	display: block;
 	font-weight: 400;
@@ -198,10 +133,7 @@ dl dt {
 	color: #FFF;
 }
 
-dl dd {
-	margin-left: 2em;
-}
-
+/* Keeps display space between List and Term */
 dl.alt dt {
 	display: block;
 	width: 3em;
@@ -210,18 +142,19 @@ dl.alt dt {
 	float: left;
 }
 
-/* Pushes the definition away from term */
+/* Controls Definition spaced from Term */
 dl.alt dd {
 	margin: 0 0 0.85em 5.5em;
 }
 
+/* Space between Social Media icons and DL DT DD */
 dl.alt:after {
 	content: '';
 	display: block;
 	clear: both;
 }
 
-/* Concerns Anchor Tags */
+/* Controls Anchor Tags */
 a{
 	-moz-transition: color 0.2s ease, border-bottom 0.2s ease;
 	-webkit-transition: color 0.2s ease, border-bottom 0.2s ease;
@@ -231,49 +164,35 @@ a{
 	color: inherit;
 }
 
-/* May Not Do Anything */
-a:hover{
-	border-bottom-color: transparent;
-	color: #FFF;
-}
+/* a:hover didn't work */
 
-strong, b {
+/* Adds to Strong Tag */
+strong {
 	font-weight: 400;
 }
 
-em, i {
-	font-style: italic;
-}
-
+/* Subtle margins in the Paragraphs */
 p{
 	margin: 0 0 2em 0;
 }
 
-p.content {
-	-moz-columns: 20em 2;
-	-webkit-columns: 20em 2;
-	-ms-columns: 20em 2;
-	columns: 20em 2;
-	-moz-column-gap: 2em;
-	-webkit-column-gap: 2em;
-	-ms-column-gap: 2em;
-	column-gap: 2em;
-	text-align: justify;
-}
-
+/* Only Targets h1 */
 h1{
 	font-size: 2.5em;
 	line-height: 1.2;
 }
 
+/* Only Targets h2 */
 h2{
 	font-size: 1.5em;
 }
 
+/* Only Targets h3 */
 h3{
 	font-size: 1.25em;
 }
 
+/* Collectively targeting headers */
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 	line-height: 1.5;
@@ -281,23 +200,22 @@ h1, h2, h3, h4, h5, h6 {
 	letter-spacing: -0.025em;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	color: inherit;
-	text-decoration: none;
-}
+/*------------- IDs -------------*/
 
-/*----------- IDs -----------*/
+/* Contains the Entirety of Box Content */
 #container{
 	width: 64em;
 	max-width: calc(100% - 4em);
 	margin: 0 auto;
 }
 
+/* Deals with Top Header */
 #header{
 	padding: 5em 5em 1em 5em;
 	text-align: center;
 }
 
+/* Subtly controls h1 */
 #header h1{
 	margin: 0 0 0.25em 0;
 }
