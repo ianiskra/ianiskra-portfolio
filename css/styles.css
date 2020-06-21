@@ -782,6 +782,28 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 10px;
 }
 
+.site{
+	color: #FFF;
+	text-decoration: underline;
+}
+
+.site:hover{
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+.tech-used{
+	border: solid 1px #008F00;
+	color: #008F00;
+	padding: 5px;
+	margin: 0 15px 10px 0;
+}
+
+.tech-used:hover{
+	background-color: #008F00;
+	color: #FFF;
+}
+
 .icon.major:before{
 	display: inline-block;
 	font-size: 6.25rem;
