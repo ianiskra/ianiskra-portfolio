@@ -754,12 +754,32 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Font Awesome 5 Brands';
 }
 
+
+/* Contains the Web Project  */
 .icon.major{
 	border: solid 5px black;
 	display: inline-block;
 	padding: 0.65em;
 	margin: 0 0 2em 0;
 	cursor: default;
+}
+
+.hover-content{
+	display: none;
+}
+
+.project:hover .hover-content{
+	background:rgba(0,0,0,.7);
+	position:absolute;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	text-align:left;
+	display:block;
+	-webkit-animation:fadein.5s;
+	animation:fadein .5s;
+	padding: 10px;
 }
 
 .icon.major:before{
