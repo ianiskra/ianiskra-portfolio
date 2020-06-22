@@ -164,8 +164,6 @@ a{
 	color: inherit;
 }
 
-/* a:hover didn't work */
-
 /* Adds to Strong Tag */
 strong {
 	font-weight: 400;
@@ -209,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 auto;
 }
 
-/* Deals with Top Header */
+/* Very Top of Page */
 #header{
 	padding: 5em 5em 1em 5em;
 	text-align: center;
@@ -220,6 +218,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 0.25em 0;
 }
 
+/* Statement at Page Top */
 #header p{
 	font-size: 1.25em;
 	letter-spacing: -0.025em;
@@ -259,12 +258,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 1.5em 0;
 }
 
-#header.alt .logo img{
-	display: block;
-	margin: 0 auto;
-	max-width: 75%;
-}
-
 /* Target the Navigation */
 #nav{
 	-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
@@ -282,50 +275,15 @@ h1, h2, h3, h4, h5, h6 {
 	border-top-right-radius: 0.25em;
 	cursor: default;
 	text-align: center;
-	/* position: fixed; */
-	/* Overflow is for the sticky navbar */
-	/* overflow: hidden; */
 }
 
-#nav input, #nav select, #nav textarea {
-	color: #636363;
-}
-
-#nav a:hover {
-	color: #636363;
-}
-
-		#nav strong, #nav b {
-			color: #636363;
-		}
-
-#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
-	color: #636363;
-}
-
-#nav blockquote {
-			border-left-color: #dddddd;
-		}
-
-#nav code {
-	background: rgba(222, 222, 222, 0.25);
-	border-color: #dddddd;
-}
-
-		#nav hr {
-			border-bottom-color: #dddddd;
-		}
-
-
-.selected{
-	background-color: rgba(222, 222, 222, 0.25);
-}
-
-/* Select all #main elements after #nav , #main comes after #nav */
+/* Select all #main elements after #nav, #main comes after #nav */
+/* Special Spacing between navbar and Top Main Content */
 #nav + #main {
 	padding-top: 4.25em;
 }
 
+/* Targets Top Nav Links */
 #nav ul{
 	margin: 0;
 	padding: 0;
@@ -333,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #nav ul li{
-	/* Displays List left to right */
+	/* Displays left to right */
 	display: inline-block;
 	margin: 0 0.35em;
 	padding: 0;
@@ -344,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
 	-ms-transition: margin 0.2s ease;
 }
 
-/* Target Navigation Links */
+/* Target Navigation Links at Anchor */
 #nav ul li a{
 	padding: 0 1.25em;
 	border: 0;
@@ -359,15 +317,18 @@ h1, h2, h3, h4, h5, h6 {
 	-ms-transition: font-size 0.2s ease;
 }
 
+/* Applies a Hover Color */
 #nav ul li a:hover {
 	background-color: rgba(222, 222, 222, 0.25);
 }
 
+/* Active Section Clicked On */
 #nav ul li a.active {
 	background-color: #FFF;
 	box-shadow: none;
 }
 
+/* Carries the Navbar down and Supports Active Tab */
 #nav.alt{
 	position: fixed;
 	top: 0;
@@ -378,21 +339,13 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 10000;
 }
 
-#nav.alt ul li {
-	margin: 0 0.175em;
-}
-
-#nav.alt ul li a {
-	font-size: 0.9em;
-}
-
-
 #main{
 	background-color: #FFF;
 	color: #636363;
 	border-radius: 0.25em;
 }
 
+/* The Word "Java" at Java Projects */
 #main strong{
 	color: #636363;
 }
@@ -401,126 +354,36 @@ h1, h2, h3, h4, h5, h6 {
 	color: #636363;
 }
 
-/* Below code must've been associated with a JS File */
-/* #main input[type="submit"],
-		#main input[type="reset"],
-		#main input[type="button"],
-		#main button, */
+/* White Button Style Support*/
 #main .button{
 	background-color: transparent;
 	color: #636363 !important;
 	box-shadow: inset 0 0 0 1px #dddddd;
 }
 
-/* Below code must've been associated with a JS File */
-/* #main input[type="submit"]:hover,
-			#main input[type="reset"]:hover,
-			#main input[type="button"]:hover,
-			#main button:hover, */
-
-/* White Colored Buttons */
+/* White Colored Button Hovered */
 #main .button:hover{
 	background-color: rgba(222, 222, 222, 0.25);
 }
 
-/* Below code must've been associated with a JS File */
-/* #main input[type="submit"]:active,
-			#main input[type="reset"]:active,
-			#main input[type="button"]:active,
-			#main button:active, */
-#main .button:active{
-	background-color: rgba(222, 222, 222, 0.5);
-}
-
-/* Below code must've been associated with a JS File */
-/* #main input[type="submit"].icon:before,
-			#main input[type="reset"].icon:before,
-			#main input[type="button"].icon:before,
-			#main button.icon:before, */
-#main .button.icon:before {
-	color: rgba(99, 99, 99, 0.25);
-}
-
-/* Below code must've been associated with a JS File */
-/* #main input[type="submit"].primary,
-#main input[type="reset"].primary,
-#main input[type="button"].primary,
-#main button.primary, */
-
-/* Targets Resume Button */
+/* Targets Resume & Contact Form 1 Button */
 #main .button.primary{
 	background-color: #8cc9f0;
 	color: #FFF !important;
 	box-shadow: none;
 }
 
-/* Below code must've been associated with a JS File */
-/* #main input[type="submit"].primary:hover,
-#main input[type="reset"].primary:hover,
-#main input[type="button"].primary:hover,
-#main button.primary:hover, */
-
-/* Resume and Contact Form Button */
+/* Blue Buttons Hover */
 #main .button.primary:hover{
 	background-color: #9acff2;
 }
 
-/* Below code must've been associated with a JS File */
-/* #main input[type="submit"].primary:active,
-#main input[type="reset"].primary:active,
-#main input[type="button"].primary:active,
-#main button.primary:active, */
-#main .button.primary:active{
-	background-color: #7ec3ee;
-}
-
-/* Below code must've been associated with a JS File */
-/* #main input[type="submit"].primary.icon:before,
-#main input[type="reset"].primary.icon:before,
-#main input[type="button"].primary.icon:before,
-#main button.primary.icon:before, */
-#main .button.primary.icon:before{
-	color: #FFF !important;
-}
-
-/* Placeholder color values */
-#main ::-webkit-input-placeholder {
-	color: rgba(99, 99, 99, 0.25) !important;
-}
-
-#main :-moz-placeholder {
-	color: rgba(99, 99, 99, 0.25) !important;
-}
-
-#main ::-moz-placeholder {
-	color: rgba(99, 99, 99, 0.25) !important;
-}
-
-#main :-ms-input-placeholder {
-	color: rgba(99, 99, 99, 0.25) !important;
-}
-
+/* Image Anchor Borders Web Projects */
 #main .icon.major {
 	border-color: #DDD;
 }
 
-#main .icon.alt {
-	border-color: #DDD;
-	color: #636363;
-}
-
-#main .icon.alt:hover {
-	background-color: rgba(222, 222, 222, 0.25);
-}
-
-#main .icon.alt:active {
-	background-color: rgba(222, 222, 222, 0.5);
-}
-
-#main ul.alt li {
-	border-top-color: #dddddd;
-}
-
+/* Helps Support Special Underline Below Headers */
 #main header.major h2:after{
 	background-color: #DDD;
 	background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
@@ -529,37 +392,18 @@ h1, h2, h3, h4, h5, h6 {
 	background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 }
 
-/* Circle Around Circular Image */
+/* Circle Around Circular Image Top of Main */
 #main .spotlight .image {
 	border-color: #dddddd;
 }
 
 /* #main parent of .main. Begins centering the content in #main */
+/* Supports Main Content Inner Padding */
 #main > .main{
 	padding: 5em 5em 3em 5em;
 }
 
-#main > .main:first-child {
-	border-top: 0;
-}
-
-#main > .main > .image.main:first-child{
-	margin: -5em 0 5em -5em;
-	width: calc(100% + 10em);
-	border-top-right-radius: 0.25em;
-	border-top-left-radius: 0.25em;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-}
-
-#main > .main > .image.main:first-child img {
-	border-top-right-radius: 0.25em;
-	border-top-left-radius: 0.25em;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-}
-
-
+/* Footer Materials including "Learn More" Button and Very Bottom Page */
 #footer{
 	display: flex;
 	display: -moz-flex;
@@ -574,12 +418,13 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 3em -2em;
 }
 
-/* Allows for both sections to be next to each other */
+/* Allows for both Bottom sections to be next to each other */
 #footer > * {
 	width: calc(50% - 2em);
 	margin-left: 2em;
 }
 
+/* Targets the Copyright message at Very Bottom */
 #footer .copyright{
 	width: 100%;
 	margin: 2.5em 0 2em 0;
@@ -587,24 +432,10 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-/*---------- Classes ----------*/
-
-/* I used sticky class to have #nav be fixed */
-
-/* Sticky may not actually be doing anything */
-
-/* .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-} */
-
-/* .sticky + .main {
-  padding-top: 60px;
-} */
-
+/*------------- Classes -------------*/
 
 /* Apply Fade-In Here. Wrapper before box */
+/* Holds the About Content */
 .spotlight{
 	display: flex;
 	display: -moz-flex;
@@ -618,8 +449,8 @@ h1, h2, h3, h4, h5, h6 {
 	justify-content: center;
 }
 
-
 /* This is alterting the content */
+/* Supports the About Section */
 .spotlight .intro-content{
 	flex:1;
 	-moz-flex: 1;
@@ -627,14 +458,12 @@ h1, h2, h3, h4, h5, h6 {
 	-ms-flex: 1;
 }
 
-.spotlight .intro-content > :last-child {
-	margin-bottom: 0;
-}
-
+/* Supports the description of About */
 .spotlight .intro-content header.major {
 	margin: 0 0 2em 0;
 }
 
+/* Targets the Image at About */
 .spotlight .image{
 	display: inline-block;
 	margin: 0 0 0 4em;
@@ -644,13 +473,14 @@ h1, h2, h3, h4, h5, h6 {
 	border-color: rgba(255, 255, 255, 0.35);
 }
 
-/* Target the Image */
+/* Keeps the Image at About circular */
 .spotlight .image img{
 	display: block;
 	border-radius: 100%;
 	width: 16em;
 }
 
+/* All the Buttons on the page */
 .button{
 	-moz-appearance: none;
 	-webkit-appearance: none;
@@ -674,7 +504,7 @@ h1, h2, h3, h4, h5, h6 {
 	white-space: nowrap;
 }
 
-/* Features */
+/* Features at Web Projects */
 .features{
 	display: -moz-flex;
 	display: -webkit-flex;
@@ -694,6 +524,7 @@ h1, h2, h3, h4, h5, h6 {
 	list-style: none;
 }
 
+/* Features at Web Projects */
 .features li{
 	width: calc(33.33333% - 2em);
 	margin: 3em 0 0 2em;
@@ -701,19 +532,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* nth-child matches every element that is the nth child, regardless of type, of its parent */
+/* Margin between Header and Web Projects */
 .features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3){
 	margin-top: 0;
 }
 
+/* Margin between Web Projects on top of each other */
 .features li > :last-child {
 	margin-bottom: 0;
 }
 
+/* Anchor tag image of Project */
 .project-img{
 	width: 350px;
 	height: 350px;
 }
 
+/* Will Allow the Hover Over Effect on Project Images */
 .icon{
 	text-decoration: none;
 	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -724,38 +559,8 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 }
 
-/* :before inserts something before the content of each selected element */
-.icon:before{
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	display: inline-block;
-	font-style: normal;
-	font-variant: normal;
-	text-rendering: auto;
-	line-height: 1;
-	/* Inquire more about !important */
-	text-transform: none !important;
-	font-family: 'Font Awesome 5 Free';
-	font-weight: 400;
-	line-height: solid;
-}
-
 /* icon is the parent element, select parent of label */
-.icon > .label{
-	display: none;
-}
-
-.icon.solid:before{
-	font-weight: 900;
-}
-
-/* Social Media Brands */
-.icon.brands:before{
-	font-family: 'Font Awesome 5 Brands';
-}
-
-
-/* Contains the Web Project  */
+/* Contains the Web Project and Outer Borders */
 .icon.major{
 	border: solid 5px black;
 	display: inline-block;
@@ -764,10 +569,12 @@ h1, h2, h3, h4, h5, h6 {
 	cursor: default;
 }
 
+/* Allows hovering over Web Projects */
 .hover-content{
 	display: none;
 }
 
+/* Hover Styling over Web Projects */
 .project:hover .hover-content{
 	background:rgba(0,0,0,.7);
 	position:absolute;
@@ -782,14 +589,29 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 10px;
 }
 
+/* Projects Site */
 .site{
 	color: #FFF;
-	text-decoration: underline;
+	background-color: #7ec3ee;
+	padding: 10px;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+
+/* Repository Site */
+.site-2{
+	color: #FFF;
+	border-radius: 5px;
+	background-color: #935d8c;
+	padding: 10px;
 }
 
 .site:hover{
 	color: #FF0000;
-	text-decoration: underline;
+}
+
+.site-2:hover{
+	color: #FF0000;
 }
 
 .tech-used{
@@ -797,6 +619,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: #008F00;
 	padding: 5px;
 	margin: 0 15px 10px 0;
+	border-radius: 5px;
 }
 
 .tech-used:hover{
@@ -989,3 +812,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 2.75rem;
 	line-height: 1.3;
 }
+
+/* Setup Media Queries for Mobile View */
+/* @media screen and (max-width:){
+
+} */
