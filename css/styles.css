@@ -341,7 +341,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #main{
 	background-color: #FFF;
-	color: #636363;
+	color: #000;
 	border-radius: 0.25em;
 }
 
@@ -434,7 +434,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------------- Classes -------------*/
 
-/* Apply Fade-In Here. Wrapper before box */
+/* Wiegley's Image */
+.image.main{
+	display: block;
+	margin: 0 0 3em 0;
+	width: 100%;
+}
+
+.image.main img {
+	width: 100%;
+}
+
 /* Holds the About Content */
 .spotlight{
 	display: flex;
@@ -614,6 +624,30 @@ h1, h2, h3, h4, h5, h6 {
 	color: #FF0000;
 }
 
+
+/* Left off here 06/28/20, Need to work on */
+.item-checklist li{
+	float:left;
+	border:solid 1px #008F00;
+	padding:2px 10px;
+	margin:0 15px 10px 0;
+	border-radius:2px;
+}
+
+.item-checklist li:hover{
+	background-color:#008F00;
+}
+
+.item-checklist li:hover a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.item-checklist li a{
+	display:block;
+	display:inline-block;
+}
+
 .tech-used{
 	border: solid 1px #008F00;
 	color: #008F00;
@@ -734,17 +768,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .image.fit img {
-	width: 100%;
-}
-
-/* Wiegley's Image */
-.image.main{
-	display: block;
-	margin: 0 0 3em 0;
-	width: 100%;
-}
-
-.image.main img {
 	width: 100%;
 }
 

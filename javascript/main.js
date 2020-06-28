@@ -43,7 +43,7 @@
 				},
 			});
 
-			// Links
+			// Anchor Links
 			var $nav_a = $nav.find('a');
 
 			$nav_a.scrolly({
