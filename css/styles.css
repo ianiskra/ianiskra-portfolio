@@ -840,3 +840,226 @@ h1, h2, h3, h4, h5, h6 {
 /* @media screen and (max-width:){
 
 } */
+
+@media screen and (max-width: 1275px){
+	html, body {
+		min-width: 320px;
+	}
+
+	body, input, select, textarea {
+		font-size: 14pt;
+	}
+	body, input, select, textarea {
+		font-size: 12pt;
+	}
+	body, input, select, textarea {
+		font-size: 11pt;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	.button {
+		min-width: 0;
+	}
+
+	.icon.major {
+		margin: 0 0 1.5em 0;
+		padding: 0.35em;
+	}
+
+	.icon.major:before {
+		font-size: 3.5rem;
+	}
+
+	ul.actions:not(.fixed) {
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		margin-left: 0;
+		width: 100% !important;
+	}
+
+	ul.actions:not(.fixed) li {
+		-moz-flex-grow: 1;
+		-webkit-flex-grow: 1;
+		-ms-flex-grow: 1;
+		flex-grow: 1;
+		-moz-flex-shrink: 1;
+		-webkit-flex-shrink: 1;
+		-ms-flex-shrink: 1;
+		flex-shrink: 1;
+		padding: 1em 0 0 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	ul.actions:not(.fixed) li > * {
+		width: 100%;
+	}
+
+	ul.actions:not(.fixed) li:first-child {
+		padding-top: 0;
+	}
+
+	ul.actions:not(.fixed) li input[type="submit"],
+	ul.actions:not(.fixed) li input[type="reset"],
+	ul.actions:not(.fixed) li input[type="button"],
+	ul.actions:not(.fixed) li button,
+	ul.actions:not(.fixed) li .button {
+		width: 100%;
+	}
+
+	ul.actions:not(.fixed) li input[type="submit"].icon:before,
+	ul.actions:not(.fixed) li input[type="reset"].icon:before,
+	ul.actions:not(.fixed) li input[type="button"].icon:before,
+	ul.actions:not(.fixed) li button.icon:before,
+	ul.actions:not(.fixed) li .button.icon:before {
+		margin-left: -0.5rem;
+	}
+
+	header.major {
+		margin-bottom: 0;
+	}
+
+	header.major h2 {
+		font-size: 1.5em;
+	}
+
+	header.major p {
+		font-size: 1em;
+		letter-spacing: 0;
+	}
+
+	header.major p br {
+		display: none;
+	}
+
+	footer.major {
+		margin-top: 0;
+	}
+
+	.features {
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+
+	.features li {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 2em;
+	}
+
+	.features li:nth-child(2), .features li:nth-child(3) {
+		margin-top: 2em;
+	}
+
+	.oop-projects li strong, .oop-projects li b {
+		font-size: 1.5em;
+	}
+
+	.oop-projects {
+		display: block;
+		width: 20em;
+		max-width: 100%;
+		margin: 0 auto 2em auto;
+	}
+
+	.oop-projects li:first-child {
+		border-bottom-left-radius: 0;
+		border-top-right-radius: 8px;
+	}
+
+	.oop-projects li:last-child {
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 8px;
+	}
+
+	.oop-projects li .icon:before {
+		font-size: 3.75rem;
+	}
+
+	.oop-projects li strong, .oop-projects li b {
+		font-size: 2.5em;
+	}
+
+	/* Top Image at the About Section */
+	.spotlight .image {
+		padding: 0.35em;
+	}
+
+	.spotlight .image img {
+		width: 12em;
+	}
+
+	#header {
+		padding: 2.5em 1em 0.1em 1em ;
+	}
+
+	#header.alt {
+		padding: 3.5em 1em 0.5em 1em ;
+	}
+
+	#header p {
+		font-size: 1em;
+		letter-spacing: 0;
+	}
+
+	#header p br {
+		display: none;
+	}
+
+	#header.alt h1 {
+		font-size: 2.5em;
+	}
+
+	#nav {
+		display: none;
+	}
+
+	#nav + #main {
+		padding-top: 0;
+	}
+
+	#main {
+		border-radius: 0;
+	}
+
+	#main > .main {
+		padding: 2.5em 1em 0.5em 1em ;
+	}
+
+	#main > .main > .image.main:first-child {
+		margin: -2.5em 0 1.5em -1em;
+		width: calc(100% + 2em);
+		border-radius: 0;
+	}
+
+	#main > .main > .image.main:first-child img {
+		border-radius: 0;
+	}
+
+	#footer {
+		padding: 2.5em 1em 0.5em 1em ;
+		display: block;
+		margin: 0 0 3em 0;
+		width: 100%;
+	}
+
+	#footer > * {
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 3em;
+	}
+
+	#footer .copyright {
+		text-align: left;
+	}
+
+	#wrapper {
+				max-width: 100%;
+			}
+
+}
