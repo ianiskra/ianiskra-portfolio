@@ -698,6 +698,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .icon.java1{
 	color: #efa8b0;
+	padding: 0;
 }
 
 .icon.java2{
@@ -852,6 +853,8 @@ h1, h2, h3, h4, h5, h6 {
 } */
 
 @media screen and (max-width: 1275px){
+	/*---------- Tags ----------*/
+	/* Supports the overall page layout */
 	html, body {
 		min-width: 320px;
 	}
@@ -868,19 +871,6 @@ h1, h2, h3, h4, h5, h6 {
 
 	h1 {
 		font-size: 2em;
-	}
-
-	.button {
-		min-width: 0;
-	}
-
-	.icon.major {
-		margin: 0 0 1.5em 0;
-		padding: 0.35em;
-	}
-
-	.icon.major:before {
-		font-size: 3.5rem;
 	}
 
 	/* Keeps buttons aligned correctly */
@@ -932,6 +922,7 @@ h1, h2, h3, h4, h5, h6 {
 		margin-left: -0.5rem;
 	}
 
+	/* Targets Main Headers and the Footer */
 	header.major {
 		margin-bottom: 0;
 	}
@@ -953,100 +944,7 @@ h1, h2, h3, h4, h5, h6 {
 		margin-top: 0;
 	}
 
-	/* Projects On Top of Each Other */
-	.features {
-		width: 100%;
-		margin: 0 0 2em 0;
-	}
-
-	.features li {
-		width: 100%;
-		margin-left: 0;
-		margin-top: 2em;
-	}
-
-	.features li:nth-child(2), .features li:nth-child(3) {
-		margin-top: 2em;
-	}
-
-	.oop-projects li strong, .oop-projects li b {
-		font-size: 1.5em;
-	}
-
-	.oop-projects {
-		display: block;
-		width: 20em;
-		max-width: 100%;
-		margin: 0 auto 2em auto;
-	}
-
-	.oop-projects li:first-child {
-		border-bottom-left-radius: 0;
-		border-top-right-radius: 8px;
-	}
-
-	.oop-projects li:last-child {
-		border-top-right-radius: 0;
-		border-bottom-left-radius: 8px;
-	}
-
-	.oop-projects li .icon:before {
-		font-size: 3.75rem;
-	}
-
-	.oop-projects li strong, .oop-projects li b {
-		font-size: 2.5em;
-	}
-
-	/* Centers Image at the Top */
-	.spotlight{
-		-moz-flex-direction: column-reverse;
-		-webkit-flex-direction: column-reverse;
-		-ms-flex-direction: column-reverse;
-		flex-direction: column-reverse;
-		text-align: center;
-	}
-
-	.spotlight .major-content{
-		-moz-flex: 0 1 auto;
-		-webkit-flex: 0 1 auto;
-		-ms-flex: 0 1 auto;
-		flex: 0 1 auto;
-		width: 100%;
-	}
-
-	/* Centers the Special Underline at Header Intro */
-	.spotlight .intro-content header.major h2:after {
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.spotlight .major-content header.major h2:after {
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.spotlight .major-content .actions {
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
-		justify-content: center;
-		width: calc(100% + 1em);
-	}
-
-	.spotlight .image {
-		-moz-flex: 0 1 auto;
-		-webkit-flex: 0 1 auto;
-		-ms-flex: 0 1 auto;
-		flex: 0 1 auto;
-		margin-left: 0;
-		margin-bottom: 2em;;
-	}
-
-	.spotlight .image img {
-		width: 12em;
-	}
-
+	/*--------- IDs ---------*/
 	#header {
 		padding: 2.5em 1em 0.1em 1em ;
 	}
@@ -1114,5 +1012,119 @@ h1, h2, h3, h4, h5, h6 {
 	#wrapper {
 		max-width: 100%;
 	}
+	/*-------- Classes ---------*/
 
+	/* Centers Image at the Top */
+	.spotlight{
+		-moz-flex-direction: column-reverse;
+		-webkit-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.spotlight{
+		-moz-flex: 0 1 auto;
+		-webkit-flex: 0 1 auto;
+		-ms-flex: 0 1 auto;
+		flex: 0 1 auto;
+		width: 100%;
+	}
+
+	/* Centers the Special Underline at Header Intro */
+	.spotlight .intro-content header.major h2:after {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/**/
+	.spotlight header.major h2:after {
+		margin: 0 auto;
+	}
+
+	.spotlight .actions {
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		width: calc(100% + 1em);
+	}
+
+	.spotlight .image {
+		-moz-flex: 0 1 auto;
+		-webkit-flex: 0 1 auto;
+		-ms-flex: 0 1 auto;
+		flex: 0 1 auto;
+		margin-left: 0;
+		margin-bottom: 2em;
+	}
+
+	.spotlight .image img {
+		width: 12em;
+	}
+
+	.button {
+		min-width: 0;
+	}
+
+	.icon .major {
+		margin: 0 0 1.5em 0;
+		padding: 0.35em;
+	}
+
+	.icon .major:before {
+		font-size: 3.5rem;
+	}
+
+	/* Projects On Top of Each Other */
+	.features {
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+
+	.features li {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 2em;
+	}
+
+	.features li:nth-child(2), .features li:nth-child(3) {
+		margin-top: 2em;
+	}
+
+	/* Apply the Hidden Effect */
+	.hidden{
+		visibility: hidden;
+	}
+
+	.oop-projects li strong, .oop-projects li b {
+		font-size: 1.5em;
+	}
+
+	.oop-projects {
+		display: block;
+		width: 20em;
+		max-width: 100%;
+		margin: 0 auto 2em auto;
+	}
+
+	/* Leftmost/Top Project */
+	.oop-projects li:first-child {
+		border-bottom-left-radius: 0;
+		border-top-right-radius: 8px;
+	}
+
+	/* Rightmost/Bottom Project */
+	.oop-projects li:last-child {
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 8px;
+	}
+
+	.oop-projects li .icon:before {
+		font-size: 3.75rem;
+	}
+
+	.oop-projects li strong, .oop-projects li b {
+		font-size: 2.5em;
+	}
 }
