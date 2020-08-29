@@ -386,6 +386,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Image Anchor Borders Web Projects */
 #main .icon.major {
 	border-color: #DDD;
+	
 }
 
 /* Helps Support Special Underline Below Headers */
@@ -559,12 +560,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Anchor tag image of Project */
 .project-img{
-	width: 350px;
-	height: 350px;
+	width: 100%;
 }
 
 /* Will Allow the Hover Over Effect on Project Images */
+
+/* Applied a min-height HERE to keep inner tags from exiting the containg box breaks at width 1388px */
 .icon{
+	min-height: 20em;
+	width: 100%;
 	text-decoration: none;
 	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -572,11 +576,13 @@ h1, h2, h3, h4, h5, h6 {
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	border-bottom: none;
 	position: relative;
+	
 }
 
 /* icon is the parent element, select parent of label */
 /* Contains the Web Project and Outer Borders */
 .icon.major{
+	width: 100%;
 	border: solid 5px black;
 	display: inline-block;
 	padding: 0.65em;
@@ -655,7 +661,7 @@ h1, h2, h3, h4, h5, h6 {
 .icon.major:before{
 	display: inline-block;
 	font-size: 6.25rem;
-	width: 2.25em;
+	width: 100%;
 	height: 2.25em;
 	line-height: 2.2em;
 	border: solid 1px;
@@ -663,6 +669,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .icon.alt{
+	width: 100%;
 	display: inline-block;
 	border: solid 1px;
 	border-radius: 100%;
@@ -671,7 +678,7 @@ h1, h2, h3, h4, h5, h6 {
 .icon.alt:before{
 	display: block;
 	font-size: 1.25em;
-	width: 2em;
+	width: 100%;
 	height: 2em;
 	text-align: center;
 	line-height: 2em;
